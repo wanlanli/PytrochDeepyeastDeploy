@@ -1,0 +1,273 @@
+2024-08-07 13:10:33,317 INFO    MainThread:261132 [internal.py:wandb_internal():90] W&B internal server running at pid: 261132, started at: 2024-08-07 13:10:33.316705
+2024-08-07 13:10:33,319 INFO    WriterThread:261132 [datastore.py:open_for_write():75] open: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/run-zits3id8.wandb
+2024-08-07 13:10:33,323 DEBUG   SenderThread:261132 [sender.py:send():235] send: header
+2024-08-07 13:10:33,323 DEBUG   SenderThread:261132 [sender.py:send():235] send: run
+2024-08-07 13:10:33,574 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: check_version
+2024-08-07 13:10:33,576 INFO    SenderThread:261132 [dir_watcher.py:__init__():205] watching files in: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files
+2024-08-07 13:10:33,576 INFO    SenderThread:261132 [sender.py:_start_run_threads():812] run started: zits3id8 with start time 1723029032
+2024-08-07 13:10:33,576 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:10:33,577 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:10:33,577 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: check_version
+2024-08-07 13:10:33,655 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: run_start
+2024-08-07 13:10:33,676 DEBUG   HandlerThread:261132 [meta.py:__init__():35] meta init
+2024-08-07 13:10:33,676 DEBUG   HandlerThread:261132 [meta.py:__init__():49] meta init done
+2024-08-07 13:10:33,676 DEBUG   HandlerThread:261132 [meta.py:probe():209] probe
+2024-08-07 13:10:33,693 DEBUG   HandlerThread:261132 [meta.py:_setup_git():199] setup git
+2024-08-07 13:10:33,716 DEBUG   HandlerThread:261132 [meta.py:_setup_git():206] setup git done
+2024-08-07 13:10:33,717 DEBUG   HandlerThread:261132 [meta.py:_save_pip():53] save pip
+2024-08-07 13:10:33,717 DEBUG   HandlerThread:261132 [meta.py:_save_pip():67] save pip done
+2024-08-07 13:10:33,717 DEBUG   HandlerThread:261132 [meta.py:_save_conda():74] save conda
+2024-08-07 13:10:34,580 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_created():256] file/dir created: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/requirements.txt
+2024-08-07 13:10:34,581 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_created():256] file/dir created: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/conda-environment.yaml
+2024-08-07 13:10:34,581 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_created():256] file/dir created: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:10:35,929 DEBUG   HandlerThread:261132 [meta.py:_save_conda():84] save conda done
+2024-08-07 13:10:35,929 DEBUG   HandlerThread:261132 [meta.py:probe():247] probe done
+2024-08-07 13:10:36,017 DEBUG   SenderThread:261132 [sender.py:send():235] send: files
+2024-08-07 13:10:36,017 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2024-08-07 13:10:36,025 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:10:36,026 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:10:36,193 DEBUG   SenderThread:261132 [sender.py:send():235] send: telemetry
+2024-08-07 13:10:36,582 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/conda-environment.yaml
+2024-08-07 13:10:36,582 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_created():256] file/dir created: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:10:36,583 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_created():256] file/dir created: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-metadata.json
+2024-08-07 13:10:36,722 INFO    Thread-11 :261132 [upload_job.py:push():132] Uploaded file /tmp/tmpo4xr05y7wandb/6c5n53vp-wandb-metadata.json
+2024-08-07 13:10:38,583 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:10:51,196 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:10:51,197 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:11:04,606 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/config.yaml
+2024-08-07 13:11:05,014 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:11:06,379 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:11:06,379 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:11:21,582 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:11:21,583 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:11:27,080 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:11:28,618 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:11:36,928 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:11:36,929 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:11:39,234 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:11:52,156 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:11:52,156 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:11:54,240 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:11:54,242 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:11:54,243 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:11:54,245 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:11:54,630 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:11:56,635 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:12:07,333 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:12:07,334 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:12:13,510 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:12:21,415 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:12:21,416 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:12:21,417 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:12:21,422 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:12:21,646 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:12:22,597 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:12:22,598 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:12:22,646 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:12:37,774 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:12:37,774 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:12:47,744 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:12:48,766 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:12:48,769 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:12:48,769 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:12:48,770 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:12:49,658 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:12:50,659 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:12:52,995 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:12:52,996 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:13:08,212 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:13:08,213 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:13:15,885 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:13:15,887 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:13:15,887 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:13:15,892 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:13:16,672 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:13:16,673 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:13:22,834 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:13:23,410 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:13:23,410 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:13:38,632 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:13:38,633 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:13:47,605 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:13:47,606 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:13:47,608 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:13:47,608 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:13:47,707 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:13:48,708 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:13:53,899 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:13:53,904 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:14:01,324 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:14:09,183 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:14:09,184 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:14:19,680 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:14:19,682 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:14:19,682 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:14:19,684 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:14:19,753 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:14:20,754 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:14:24,454 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:14:24,455 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:14:38,130 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:14:39,731 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:14:39,732 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:14:49,120 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:14:49,122 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:14:49,122 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:14:49,123 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:14:49,775 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:14:50,776 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:14:54,939 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:14:54,939 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:15:10,120 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:15:10,121 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:15:16,387 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:15:22,557 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:15:22,559 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:15:22,559 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:15:22,559 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:15:22,796 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:15:24,797 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:15:25,429 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:15:25,429 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:15:40,633 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:15:40,634 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:15:53,871 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:15:55,872 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: stop_status
+2024-08-07 13:15:55,873 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: stop_status
+2024-08-07 13:15:55,892 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:15:56,068 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:15:56,075 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:15:56,076 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:15:56,817 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:15:56,818 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:16:02,920 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: partial_history
+2024-08-07 13:16:02,921 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:16:02,921 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:16:02,922 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:16:02,923 DEBUG   SenderThread:261132 [sender.py:send():235] send: telemetry
+2024-08-07 13:16:02,932 DEBUG   SenderThread:261132 [sender.py:send():235] send: telemetry
+2024-08-07 13:16:03,820 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:16:04,821 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:16:05,820 DEBUG   SenderThread:261132 [sender.py:send():235] send: exit
+2024-08-07 13:16:05,820 INFO    SenderThread:261132 [sender.py:send_exit():371] handling exit code: 0
+2024-08-07 13:16:05,821 INFO    SenderThread:261132 [sender.py:send_exit():373] handling runtime: 332
+2024-08-07 13:16:05,821 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:16:05,822 INFO    SenderThread:261132 [sender.py:send_exit():379] send defer
+2024-08-07 13:16:05,822 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:16:05,823 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:16:05,820 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:05,823 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:05,823 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 0
+2024-08-07 13:16:05,823 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:05,824 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:05,824 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 0
+2024-08-07 13:16:05,824 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 1
+2024-08-07 13:16:05,824 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:05,824 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 1
+2024-08-07 13:16:06,236 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:06,236 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,236 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 1
+2024-08-07 13:16:06,236 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 2
+2024-08-07 13:16:06,236 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:06,236 DEBUG   SenderThread:261132 [sender.py:send():235] send: stats
+2024-08-07 13:16:06,237 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:06,237 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 2
+2024-08-07 13:16:06,238 DEBUG   SenderThread:261132 [sender.py:send():235] send: history
+2024-08-07 13:16:06,239 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:16:06,239 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:16:06,239 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,239 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 2
+2024-08-07 13:16:06,239 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 3
+2024-08-07 13:16:06,240 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:06,240 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 3
+2024-08-07 13:16:06,240 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,240 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 3
+2024-08-07 13:16:06,240 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 4
+2024-08-07 13:16:06,241 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:06,241 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 4
+2024-08-07 13:16:06,241 DEBUG   SenderThread:261132 [sender.py:send():235] send: summary
+2024-08-07 13:16:06,241 INFO    SenderThread:261132 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-08-07 13:16:06,241 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,242 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 4
+2024-08-07 13:16:06,242 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 5
+2024-08-07 13:16:06,242 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:06,242 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 5
+2024-08-07 13:16:06,242 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,242 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 5
+2024-08-07 13:16:06,338 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:06,490 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 6
+2024-08-07 13:16:06,490 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:06,491 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:06,503 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 6
+2024-08-07 13:16:06,503 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,503 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 6
+2024-08-07 13:16:06,503 INFO    SenderThread:261132 [dir_watcher.py:finish():336] shutting down directory watcher
+2024-08-07 13:16:06,604 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:06,823 INFO    Thread-7  :261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:16:06,823 INFO    SenderThread:261132 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/config.yaml
+2024-08-07 13:16:06,824 INFO    SenderThread:261132 [dir_watcher.py:finish():366] scan: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files
+2024-08-07 13:16:06,824 INFO    SenderThread:261132 [dir_watcher.py:finish():380] scan save: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/conda-environment.yaml conda-environment.yaml
+2024-08-07 13:16:06,824 INFO    SenderThread:261132 [dir_watcher.py:finish():380] scan save: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/config.yaml config.yaml
+2024-08-07 13:16:06,825 INFO    SenderThread:261132 [dir_watcher.py:finish():380] scan save: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-metadata.json wandb-metadata.json
+2024-08-07 13:16:06,825 INFO    SenderThread:261132 [dir_watcher.py:finish():380] scan save: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/requirements.txt requirements.txt
+2024-08-07 13:16:06,825 INFO    SenderThread:261132 [dir_watcher.py:finish():380] scan save: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log output.log
+2024-08-07 13:16:06,825 INFO    SenderThread:261132 [dir_watcher.py:finish():380] scan save: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json wandb-summary.json
+2024-08-07 13:16:06,825 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 7
+2024-08-07 13:16:06,825 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:06,826 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:06,826 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 7
+2024-08-07 13:16:06,826 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:06,826 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 7
+2024-08-07 13:16:06,826 INFO    SenderThread:261132 [file_pusher.py:finish():145] shutting down file pusher
+2024-08-07 13:16:06,927 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:06,928 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,029 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,029 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,130 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,131 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,233 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,233 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,292 INFO    Thread-12 :261132 [upload_job.py:push():132] Uploaded file /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/conda-environment.yaml
+2024-08-07 13:16:07,334 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,335 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,397 INFO    Thread-15 :261132 [upload_job.py:push():132] Uploaded file /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/output.log
+2024-08-07 13:16:07,406 INFO    Thread-13 :261132 [upload_job.py:push():132] Uploaded file /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/config.yaml
+2024-08-07 13:16:07,407 INFO    Thread-14 :261132 [upload_job.py:push():132] Uploaded file /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/requirements.txt
+2024-08-07 13:16:07,436 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,436 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,492 INFO    Thread-16 :261132 [upload_job.py:push():132] Uploaded file /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/files/wandb-summary.json
+2024-08-07 13:16:07,537 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,538 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,639 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:07,639 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:07,692 INFO    Thread-6  :261132 [sender.py:transition_state():392] send defer: 8
+2024-08-07 13:16:07,693 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:07,693 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 8
+2024-08-07 13:16:07,693 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:07,693 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 8
+2024-08-07 13:16:07,740 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:08,202 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 9
+2024-08-07 13:16:08,203 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:08,203 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:08,203 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 9
+2024-08-07 13:16:08,204 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:08,204 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 9
+2024-08-07 13:16:08,204 INFO    SenderThread:261132 [sender.py:transition_state():392] send defer: 10
+2024-08-07 13:16:08,204 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: defer
+2024-08-07 13:16:08,205 INFO    HandlerThread:261132 [handler.py:handle_request_defer():164] handle defer: 10
+2024-08-07 13:16:08,205 DEBUG   SenderThread:261132 [sender.py:send():235] send: final
+2024-08-07 13:16:08,205 DEBUG   SenderThread:261132 [sender.py:send():235] send: footer
+2024-08-07 13:16:08,205 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: defer
+2024-08-07 13:16:08,205 INFO    SenderThread:261132 [sender.py:send_request_defer():388] handle sender defer: 10
+2024-08-07 13:16:08,305 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: poll_exit
+2024-08-07 13:16:08,305 DEBUG   SenderThread:261132 [sender.py:send_request():249] send_request: poll_exit
+2024-08-07 13:16:08,306 INFO    SenderThread:261132 [file_pusher.py:join():150] waiting for file pusher
+2024-08-07 13:16:08,737 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: sampled_history
+2024-08-07 13:16:08,738 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: get_summary
+2024-08-07 13:16:08,739 DEBUG   HandlerThread:261132 [handler.py:handle_request():141] handle_request: shutdown
+2024-08-07 13:16:08,739 INFO    HandlerThread:261132 [handler.py:finish():806] shutting down handler
+2024-08-07 13:16:09,205 INFO    WriterThread:261132 [datastore.py:close():279] close: /home/liwa/project/OneFormer/detectron2/projects/Panoptic-DeepLab/wandb/run-20240807_131032-zits3id8/run-zits3id8.wandb
+2024-08-07 13:16:09,636 INFO    SenderThread:261132 [sender.py:finish():1111] shutting down sender
+2024-08-07 13:16:09,636 INFO    SenderThread:261132 [file_pusher.py:finish():145] shutting down file pusher
+2024-08-07 13:16:09,636 INFO    SenderThread:261132 [file_pusher.py:join():150] waiting for file pusher
+2024-08-07 13:16:09,695 INFO    MainThread:261132 [internal.py:handle_exit():80] Internal process exited
