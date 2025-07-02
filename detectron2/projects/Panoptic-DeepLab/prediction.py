@@ -28,7 +28,7 @@ class Predictor(DefaultPredictor):
 
         self.input_format = cfg.INPUT.FORMAT
         assert self.input_format in ["RGB", "BGR"], self.input_format
-    
+
     def __call__(self, original_image):
         """
         Args:

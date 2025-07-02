@@ -51,6 +51,7 @@ class PanopticDeepLab(nn.Module):
         self.threshold = cfg.MODEL.PANOPTIC_DEEPLAB.CENTER_THRESHOLD
         self.nms_kernel = cfg.MODEL.PANOPTIC_DEEPLAB.NMS_KERNEL
         self.top_k = cfg.MODEL.PANOPTIC_DEEPLAB.TOP_K_INSTANCE
+        self.area_threshold = cfg.MODEL.PANOPTIC_DEEPLAB.INSTANCE_AREA_THRESHOLD
         self.predict_instances = cfg.MODEL.PANOPTIC_DEEPLAB.PREDICT_INSTANCES
         self.use_depthwise_separable_conv = cfg.MODEL.PANOPTIC_DEEPLAB.USE_DEPTHWISE_SEPARABLE_CONV
         assert (
@@ -169,6 +170,7 @@ class PanopticDeepLab(nn.Module):
                 threshold=self.threshold,
                 nms_kernel=self.nms_kernel,
                 top_k=self.top_k,
+                area_threshold=self.area_threshold,
             )
             # For semantic segmentation evaluation.
             processed_results.append({"sem_seg": r})
@@ -213,6 +215,11 @@ class PanopticDeepLab(nn.Module):
                         instance.scores = torch.tensor(
                             [sem_scores * center_scores], device=panoptic_image.device
                         )
+
+                        instance.center_scores = torch.tensor(
+                            [center_scores], device=panoptic_image.device
+                        )
+
                         # Get bounding boxes
                         instance.pred_boxes = BitMasks(instance.pred_masks).get_bounding_boxes()
                         instances.append(instance)

@@ -5,6 +5,7 @@ from collections import Counter
 import torch
 import torch.nn.functional as F
 
+import kornia.morphology as km
 
 def find_instance_center(center_heatmap, threshold=0.1, nms_kernel=3, top_k=None):
     """
@@ -109,7 +110,8 @@ def get_instance_segmentation(
 
 
 def merge_semantic_and_instance(
-    sem_seg, ins_seg, semantic_thing_seg, label_divisor, thing_ids, stuff_area, void_label
+    sem_seg, ins_seg, semantic_thing_seg, label_divisor, thing_ids, stuff_area, void_label,
+    area_threshold
 ):
     """
     Post-processing for panoptic segmentation, by merging semantic segmentation
@@ -141,8 +143,12 @@ def merge_semantic_and_instance(
             continue
         # Make sure only do majority voting within `semantic_thing_seg`.
         thing_mask = (ins_seg == ins_id) & is_thing
-        if torch.nonzero(thing_mask).size(0) == 0:
+        if torch.nonzero(thing_mask).size(0) < area_threshold:
             continue
+        
+        # thing_mask[0] = torch.from_numpy(self_defined_post_process(thing_mask[0].cpu().numpy()))
+        thing_mask[0] = torch_self_defined_post_process(thing_mask[0])
+
         class_id, _ = torch.mode(sem_seg[thing_mask].view(-1))
         class_id_tracker[class_id.item()] += 1
         new_ins_id = class_id_tracker[class_id.item()]
@@ -173,6 +179,7 @@ def get_panoptic_segmentation(
     threshold=0.1,
     nms_kernel=7,
     top_k=200,
+    area_threshold=200,
     foreground_mask=None,
 ):
     """
@@ -216,7 +223,6 @@ def get_panoptic_segmentation(
         thing_seg = torch.zeros_like(sem_seg)
         for thing_class in list(thing_ids):
             thing_seg[sem_seg == thing_class] = 1
-
     instance, center = get_instance_segmentation(
         sem_seg,
         center_heatmap,
@@ -228,7 +234,32 @@ def get_panoptic_segmentation(
         top_k=top_k,
     )
     panoptic = merge_semantic_and_instance(
-        sem_seg, instance, thing_seg, label_divisor, thing_ids, stuff_area, void_label
+        sem_seg, instance, thing_seg, label_divisor, thing_ids, stuff_area, void_label, area_threshold=area_threshold
     )
-
     return panoptic, center
+
+
+def torch_self_defined_post_process(mask: torch.Tensor,
+                                    area_threshold: int = 1000,
+                                    erosion_factor: int = 2):
+    """
+    Fast GPU-based morphological post-processing.
+
+    Args:
+        mask (torch.Tensor): Binary mask (H, W), torch.bool or torch.uint8
+        area_threshold (int): Minimum size for connected components
+        erosion_factor (int): Radius for erosion
+
+    Returns:
+        torch.Tensor: Refined binary mask (H, W), dtype=torch.bool
+    """
+    device = mask.device
+    mask = mask.unsqueeze(0).unsqueeze(0).float()  # (1, 1, H, W)
+    kernel = torch.ones(7, 7).to(device)
+    # Opening (remove small white noise)
+    opened = km.opening(mask, kernel)
+
+    # Closing (fill small holes)
+    closed = km.closing(opened, kernel)
+
+    return closed.squeeze().bool()
